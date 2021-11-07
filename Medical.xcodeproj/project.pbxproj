@@ -7,18 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E03FCBD2709694E001FE027 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCBC2709694E001FE027 /* Colors.swift */; };
+		8E03FCBF27096E0B001FE027 /* NWP+COM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCBE27096E0B001FE027 /* NWP+COM.swift */; };
+		8E03FCC22709720E001FE027 /* NWP+STATE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCC12709720E001FE027 /* NWP+STATE.swift */; };
+		8E03FCC5270A96A1001FE027 /* BaseApiProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCC4270A96A1001FE027 /* BaseApiProtocal.swift */; };
+		8E03FCC7270A976F001FE027 /* NetWorkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCC6270A976F001FE027 /* NetWorkConfig.swift */; };
+		8E03FCC9270A9908001FE027 /* BaseRequestProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCC8270A9908001FE027 /* BaseRequestProtocal.swift */; };
+		8E03FCCB270A9D59001FE027 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCCA270A9D59001FE027 /* NetWorkTool.swift */; };
+		8E03FCCD270A9E41001FE027 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCCC270A9E41001FE027 /* BaseModel.swift */; };
+		8E03FCD2270AA175001FE027 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCD1270AA175001FE027 /* TabBar.swift */; };
+		8E03FCD4270AA19B001FE027 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03FCD3270AA19B001FE027 /* Users.swift */; };
+		8E04B021272D3AC90010FF63 /* ChatItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04B020272D3AC90010FF63 /* ChatItemCard.swift */; };
+		8E04B023272D62950010FF63 /* ConcatDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04B022272D62940010FF63 /* ConcatDoctor.swift */; };
+		8E04B025272E59700010FF63 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04B024272E59700010FF63 /* ProductDetail.swift */; };
+		8E04B027272E6C3A0010FF63 /* ProductItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E04B026272E6C390010FF63 /* ProductItems.swift */; };
+		8E10B6C7271B142C0055D348 /* LoginOrRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10B6C6271B142C0055D348 /* LoginOrRegister.swift */; };
+		8E211ACA272D22C100FD807A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E211AC9272D22C100FD807A /* Login.swift */; };
+		8E242C64272E95A700F3A82A /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E242C63272E95A700F3A82A /* SearchPage.swift */; };
+		8E242C67273655F000F3A82A /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E242C66273655F000F3A82A /* Items.swift */; };
+		8E6039CF271B18F000BCF96C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6039CE271B18F000BCF96C /* Entry.swift */; };
 		8E65F039270966D8002497B8 /* MedicalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E65F038270966D8002497B8 /* MedicalApp.swift */; };
 		8E65F03B270966D8002497B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E65F03A270966D8002497B8 /* ContentView.swift */; };
 		8E65F03D270966DC002497B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E65F03C270966DC002497B8 /* Assets.xcassets */; };
 		8E65F040270966DC002497B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E65F03F270966DC002497B8 /* Preview Assets.xcassets */; };
+		8E8D7543270DD6A200CA086D /* Swiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D7542270DD6A200CA086D /* Swiper.swift */; };
+		8E8FF38B271ABAFF0047B42E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FF38A271ABAFF0047B42E /* CustomButton.swift */; };
+		8EA4D58F272580EB008E860B /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4D58E272580EB008E860B /* Index.swift */; };
+		8EA4D5912725933E008E860B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4D5902725933E008E860B /* Category.swift */; };
+		8EA4D5932725980A008E860B /* LookViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA4D5922725980A008E860B /* LookViewCard.swift */; };
+		8ED7A50A270AE7660086E5B5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED7A509270AE7660086E5B5 /* MapKit.framework */; };
+		8ED7A50D270AEEE00086E5B5 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7A50C270AEEE00086E5B5 /* Enum.swift */; };
+		8ED7A50F270B390D0086E5B5 /* FlowLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7A50E270B390C0086E5B5 /* FlowLayoutView.swift */; };
+		A5BEE2750FC0CA17C06B6B05 /* Pods_Medical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693F2E8E83A959B43ECBF94C /* Pods_Medical.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693F2E8E83A959B43ECBF94C /* Pods_Medical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E03FCBC2709694E001FE027 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8E03FCBE27096E0B001FE027 /* NWP+COM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWP+COM.swift"; sourceTree = "<group>"; };
+		8E03FCC12709720E001FE027 /* NWP+STATE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWP+STATE.swift"; sourceTree = "<group>"; };
+		8E03FCC4270A96A1001FE027 /* BaseApiProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProtocal.swift; sourceTree = "<group>"; };
+		8E03FCC6270A976F001FE027 /* NetWorkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkConfig.swift; sourceTree = "<group>"; };
+		8E03FCC8270A9908001FE027 /* BaseRequestProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocal.swift; sourceTree = "<group>"; };
+		8E03FCCA270A9D59001FE027 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		8E03FCCC270A9E41001FE027 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		8E03FCD1270AA175001FE027 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		8E03FCD3270AA19B001FE027 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		8E04B020272D3AC90010FF63 /* ChatItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItemCard.swift; sourceTree = "<group>"; };
+		8E04B022272D62940010FF63 /* ConcatDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatDoctor.swift; sourceTree = "<group>"; };
+		8E04B024272E59700010FF63 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		8E04B026272E6C390010FF63 /* ProductItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItems.swift; sourceTree = "<group>"; };
+		8E10B6C6271B142C0055D348 /* LoginOrRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrRegister.swift; sourceTree = "<group>"; };
+		8E211AC9272D22C100FD807A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		8E242C63272E95A700F3A82A /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		8E242C66273655F000F3A82A /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		8E6039CE271B18F000BCF96C /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		8E65F035270966D8002497B8 /* Medical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E65F038270966D8002497B8 /* MedicalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalApp.swift; sourceTree = "<group>"; };
 		8E65F03A270966D8002497B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E65F03C270966DC002497B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E65F03F270966DC002497B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E8D7542270DD6A200CA086D /* Swiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiper.swift; sourceTree = "<group>"; };
+		8E8FF38A271ABAFF0047B42E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8EA4D58E272580EB008E860B /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		8EA4D5902725933E008E860B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8EA4D5922725980A008E860B /* LookViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookViewCard.swift; sourceTree = "<group>"; };
+		8ED7A508270AA83B0086E5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8ED7A509270AE7660086E5B5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8ED7A50C270AEEE00086E5B5 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		8ED7A50E270B390C0086E5B5 /* FlowLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutView.swift; sourceTree = "<group>"; };
+		98673D06681A63C9FFF38413 /* Pods-Medical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medical.release.xcconfig"; path = "Target Support Files/Pods-Medical/Pods-Medical.release.xcconfig"; sourceTree = "<group>"; };
+		D79D5F2DF14167501B5D7FAE /* Pods-Medical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medical.debug.xcconfig"; path = "Target Support Files/Pods-Medical/Pods-Medical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +85,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED7A50A270AE7660086E5B5 /* MapKit.framework in Frameworks */,
+				A5BEE2750FC0CA17C06B6B05 /* Pods_Medical.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E03FCBB2709692B001FE027 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8E03FCC3270A95CA001FE027 /* NetWorkManger */,
+				8E03FCC0270971CA001FE027 /* NWP */,
+				8E03FCBC2709694E001FE027 /* Colors.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8E03FCC0270971CA001FE027 /* NWP */ = {
+			isa = PBXGroup;
+			children = (
+				8E03FCBE27096E0B001FE027 /* NWP+COM.swift */,
+				8E03FCC12709720E001FE027 /* NWP+STATE.swift */,
+			);
+			path = NWP;
+			sourceTree = "<group>";
+		};
+		8E03FCC3270A95CA001FE027 /* NetWorkManger */ = {
+			isa = PBXGroup;
+			children = (
+				8E03FCC4270A96A1001FE027 /* BaseApiProtocal.swift */,
+				8E03FCC6270A976F001FE027 /* NetWorkConfig.swift */,
+				8E03FCC8270A9908001FE027 /* BaseRequestProtocal.swift */,
+				8E03FCCA270A9D59001FE027 /* NetWorkTool.swift */,
+				8E03FCCC270A9E41001FE027 /* BaseModel.swift */,
+			);
+			path = NetWorkManger;
+			sourceTree = "<group>";
+		};
+		8E03FCCE270AA117001FE027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EA4D5902725933E008E860B /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E03FCCF270AA125001FE027 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7A50E270B390C0086E5B5 /* FlowLayoutView.swift */,
+				8E8D7542270DD6A200CA086D /* Swiper.swift */,
+				8E8FF38A271ABAFF0047B42E /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8E03FCD0270AA142001FE027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E242C65273655C900F3A82A /* Product */,
+				8E242C62272E958500F3A82A /* Search */,
+				8EA4D58D272580CA008E860B /* IndexPage */,
+				8E6039CD271B18A800BCF96C /* Login */,
+				8E03FCD1270AA175001FE027 /* TabBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E242C62272E958500F3A82A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8E242C63272E95A700F3A82A /* SearchPage.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8E242C65273655C900F3A82A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				8E242C66273655F000F3A82A /* Items.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		8E6039CD271B18A800BCF96C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8E10B6C6271B142C0055D348 /* LoginOrRegister.swift */,
+				8E6039CE271B18F000BCF96C /* Entry.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		8E65F02C270966D8002497B8 = {
 			isa = PBXGroup;
 			children = (
 				8E65F037270966D8002497B8 /* Medical */,
 				8E65F036270966D8002497B8 /* Products */,
+				E1999B963B412206AACB7EE9 /* Pods */,
+				B793520145FCA766F506B2AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +200,17 @@
 		8E65F037270966D8002497B8 /* Medical */ = {
 			isa = PBXGroup;
 			children = (
+				8ED7A50B270AEEAC0086E5B5 /* ClassModel */,
+				8ED7A508270AA83B0086E5B5 /* Info.plist */,
+				8E03FCD0270AA142001FE027 /* View */,
+				8E03FCCF270AA125001FE027 /* Components */,
+				8E03FCCE270AA117001FE027 /* Model */,
+				8E03FCBB2709692B001FE027 /* Tools */,
 				8E65F038270966D8002497B8 /* MedicalApp.swift */,
 				8E65F03A270966D8002497B8 /* ContentView.swift */,
 				8E65F03C270966DC002497B8 /* Assets.xcassets */,
 				8E65F03E270966DC002497B8 /* Preview Content */,
+				8ED7A50C270AEEE00086E5B5 /* Enum.swift */,
 			);
 			path = Medical;
 			sourceTree = "<group>";
@@ -67,6 +223,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8EA4D58D272580CA008E860B /* IndexPage */ = {
+			isa = PBXGroup;
+			children = (
+				8EA4D58E272580EB008E860B /* Index.swift */,
+				8EA4D5922725980A008E860B /* LookViewCard.swift */,
+				8E04B020272D3AC90010FF63 /* ChatItemCard.swift */,
+				8E04B022272D62940010FF63 /* ConcatDoctor.swift */,
+				8E04B024272E59700010FF63 /* ProductDetail.swift */,
+				8E04B026272E6C390010FF63 /* ProductItems.swift */,
+			);
+			path = IndexPage;
+			sourceTree = "<group>";
+		};
+		8ED7A50B270AEEAC0086E5B5 /* ClassModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E03FCD3270AA19B001FE027 /* Users.swift */,
+				8E211AC9272D22C100FD807A /* Login.swift */,
+			);
+			path = ClassModel;
+			sourceTree = "<group>";
+		};
+		B793520145FCA766F506B2AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7A509270AE7660086E5B5 /* MapKit.framework */,
+				693F2E8E83A959B43ECBF94C /* Pods_Medical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1999B963B412206AACB7EE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D79D5F2DF14167501B5D7FAE /* Pods-Medical.debug.xcconfig */,
+				98673D06681A63C9FFF38413 /* Pods-Medical.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E65F043270966DC002497B8 /* Build configuration list for PBXNativeTarget "Medical" */;
 			buildPhases = (
+				6FEE63A508D3D12284C50B72 /* [CP] Check Pods Manifest.lock */,
 				8E65F031270966D8002497B8 /* Sources */,
 				8E65F032270966D8002497B8 /* Frameworks */,
 				8E65F033270966D8002497B8 /* Resources */,
+				F149627DACD073026D29BD4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +330,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FEE63A508D3D12284C50B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Medical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F149627DACD073026D29BD4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medical/Pods-Medical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medical/Pods-Medical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Medical/Pods-Medical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E65F031270966D8002497B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E03FCCB270A9D59001FE027 /* NetWorkTool.swift in Sources */,
+				8E10B6C7271B142C0055D348 /* LoginOrRegister.swift in Sources */,
 				8E65F03B270966D8002497B8 /* ContentView.swift in Sources */,
+				8EA4D5932725980A008E860B /* LookViewCard.swift in Sources */,
+				8E242C67273655F000F3A82A /* Items.swift in Sources */,
+				8E03FCBF27096E0B001FE027 /* NWP+COM.swift in Sources */,
+				8E03FCC22709720E001FE027 /* NWP+STATE.swift in Sources */,
+				8E04B025272E59700010FF63 /* ProductDetail.swift in Sources */,
+				8E8FF38B271ABAFF0047B42E /* CustomButton.swift in Sources */,
+				8E6039CF271B18F000BCF96C /* Entry.swift in Sources */,
+				8E03FCD4270AA19B001FE027 /* Users.swift in Sources */,
+				8E04B021272D3AC90010FF63 /* ChatItemCard.swift in Sources */,
+				8E211ACA272D22C100FD807A /* Login.swift in Sources */,
+				8E03FCCD270A9E41001FE027 /* BaseModel.swift in Sources */,
+				8E03FCC7270A976F001FE027 /* NetWorkConfig.swift in Sources */,
+				8ED7A50D270AEEE00086E5B5 /* Enum.swift in Sources */,
+				8EA4D5912725933E008E860B /* Category.swift in Sources */,
+				8E03FCC9270A9908001FE027 /* BaseRequestProtocal.swift in Sources */,
+				8E242C64272E95A700F3A82A /* SearchPage.swift in Sources */,
+				8E04B023272D62950010FF63 /* ConcatDoctor.swift in Sources */,
+				8E03FCBD2709694E001FE027 /* Colors.swift in Sources */,
+				8ED7A50F270B390D0086E5B5 /* FlowLayoutView.swift in Sources */,
+				8E03FCD2270AA175001FE027 /* TabBar.swift in Sources */,
 				8E65F039270966D8002497B8 /* MedicalApp.swift in Sources */,
+				8EA4D58F272580EB008E860B /* Index.swift in Sources */,
+				8E03FCC5270A96A1001FE027 /* BaseApiProtocal.swift in Sources */,
+				8E04B027272E6C3A0010FF63 /* ProductItems.swift in Sources */,
+				8E8D7543270DD6A200CA086D /* Swiper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +529,7 @@
 		};
 		8E65F044270966DC002497B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79D5F2DF14167501B5D7FAE /* Pods-Medical.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,9 +539,16 @@
 				DEVELOPMENT_TEAM = CJHKA2KA89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medical/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow To Save Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -293,6 +567,7 @@
 		};
 		8E65F045270966DC002497B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98673D06681A63C9FFF38413 /* Pods-Medical.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,9 +577,16 @@
 				DEVELOPMENT_TEAM = CJHKA2KA89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Medical/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow To Save Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
