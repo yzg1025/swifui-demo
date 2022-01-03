@@ -12,11 +12,6 @@ enum ApiError{
     case custom(msg: String)
 }
 
-//class NetWorkTool{
-//    static func publishRequest<T,V>(request: T,responseType: V.Type) -> Future<Net>{
-//
-//    }
-//}
 
 typealias Rus = Result<Data,Error>
 typealias Completion = (Rus) -> Void
@@ -92,30 +87,13 @@ class HttpManager {
     }
 }
 
-
-class NetApi {
-    
-    private static func parseData<T: Decodable>(_ data:Data) -> Result<T,Error>{
-        
+extension HttpManager{
+    func parseData<T: Decodable>(_ data:Data) -> Result<T,Error>{
         guard let decodeData = try? JSONDecoder().decode(T.self, from: data) else{
             let err = NSError(domain: "NetApiError", code: 0, userInfo: [NSLocalizedDescriptionKey:"无法解析数据"])
             return .failure(err)
         }
-        
         return .success(decodeData)
     }
-    
-//    static func city(completion: @escaping (Result<PostList,Error>) -> Void){
-//        let path = "api/hs_base/select_country"
-//        HttpManager.share.Get(path:path , params: nil){res in
-//            switch res{
-//                case let .success(data):
-//                    let result: Result<PostList,Error> = parseData(data)
-//                    completion(result)
-//                case let .failure(error):
-//                    completion(.failure(error))
-//            }
-//        }
-//    }
-//
 }
+

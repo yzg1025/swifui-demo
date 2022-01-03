@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 final class NWPState: ObservableObject {
+    static let share = NWPState()
     // 显示等待
     @Published var showWait: Bool = false
     // 其他提示例如错误信息,接口返回的msg

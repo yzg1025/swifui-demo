@@ -9,15 +9,20 @@ import SwiftUI
 
 @main
 struct MedicalApp: App {
-    
-    @StateObject var login = LoginModel()
-    @StateObject var users = UsersModel()
-    
+    @AppStorage("colorIndex") var colorIndex: String = "默认"
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(login)
-                .environmentObject(users)
+            MainView().preferredColorScheme(getTheme())
         }
+    }
+    
+    // 切换主题
+    func getTheme() -> ColorScheme {
+        if colorIndex == "白天" {
+            return .light
+        } else if colorIndex == "黑夜" {
+            return .dark
+        }
+        return .light
     }
 }

@@ -9,11 +9,18 @@ import Foundation
 import CoreData
 import MapKit
 import CoreLocation
+import SwiftUI
+
+typealias TypeLogin = Result<CommonResult<UserLogin>,Error>
 
 class UsersModel: NSObject,ObservableObject,CLLocationManagerDelegate{
     static var shaer = UsersModel()
+
+    @Published var https:HttpManager = HttpManager.share
     
     @Published var places: String = ""
+    
+    @Published var isTabViewShow: Bool = true
     
     @Published var latLog: CLLocationCoordinate2D!
     
@@ -22,9 +29,13 @@ class UsersModel: NSObject,ObservableObject,CLLocationManagerDelegate{
     @Published var manager: CLLocationManager = CLLocationManager()
     
     // TabView Active
-    @Published var activeBar: Tab = .Home
+    @Published var activeBar: CustomTabs = .home
     
     @Published var currentXValue: CGFloat = 0
+    
+    @Published var historySearch: [String] = []
+    
+    @Published var userInfos: [Userinfo] = []
     
     override init() {
         super.init()
@@ -86,4 +97,11 @@ class UsersModel: NSObject,ObservableObject,CLLocationManagerDelegate{
     func getNormalDefult(key: String?) -> Any? {
         return UserDefaults.standard.value(forKey: key ?? "") as AnyObject
     }
+    
+    // 储存数组
+    func setArray(value: String) {
+        self.historySearch.append(value)
+        UserDefaults.standard.set(self.historySearch, forKey: "historySearch")
+    }
+    
 }

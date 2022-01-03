@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FlowLayoutView<Content: View,T: Identifiable>: View where T: Hashable {
+struct FlowLayoutView<Content: View,T: Codable>: View where T: Hashable {
     
     var list: [T]
     
@@ -47,7 +47,7 @@ struct FlowLayoutView<Content: View,T: Identifiable>: View where T: Hashable {
             HStack(alignment: .top,spacing: itemSpacingH){
                 ForEach(splite(),id: \.self){ objs in
                     LazyVStack(spacing: itemSpacingV){
-                        ForEach(objs){ obj in
+                        ForEach(objs,id:\.self){ obj in
                             content(obj)
                         }
                     }

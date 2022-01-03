@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct LoginOrRegister: View {
+    @StateObject var login = LoginModel()
     @Binding var isPresented: Bool
     @State var phone: String = ""
     @State var password: String = ""
-    
-    @Binding var type: String
+    @State var nickname: String = ""
+    @State var isRegister: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
-            Image(systemName: "arrow.turn.up.left")
-                .font(.system(size: 20))
+            Image(systemName: "arrow.left")
+                .font(.system(size: 25))
                 .padding(.top,20)
                 .padding(.bottom,30)
                 .onTapGesture {
@@ -25,70 +26,88 @@ struct LoginOrRegister: View {
                         isPresented.toggle()
                     }
                 }
+            
             GeometryReader{ proxy in
                 VStack(alignment: .leading){
                     VStack(alignment: .leading,spacing: 15){
-                        Text("Let's \(type == "Login" ? "sign your in" : type)")
-                            .font(.system(size: 30, weight: .bold))
-                        Text("Welecome back")
-                        Text("You've been")
+                        Text("你好,")
+                            .font(.system(size: 35))
+                        HStack{
+                            Text("欢迎来到HomeLeft,立即")
+                            Text(!isRegister ? "注册" : "登录")
+                                .foregroundColor(.orange)
+                                .onTapGesture {
+                                    withAnimation {
+                                        isRegister.toggle()
+                                    }
+                                }
+                        }
+                        .font(.system(size: 23))
                     }
-                    .font(.system(size: 30))
+                    .padding(.bottom,50)
                     
-                    RoundedRectangle(cornerRadius: 5)
-                        .fill(Color.init(hex: "#EBEBEB"))
-                        .overlay(
-                            TextField("Phone emael or username", text: $phone)
-                                .padding(.leading)
-                        )
-                        .frame(height: 50)
-                        .padding(.vertical,10)
+                    ZStack(alignment:.bottom){
+                        TextField("请输入用户名/手机号/邮箱", text: $phone)
+                            .font(.system(size: 20))
+                            .frame(height: 50)
+                            .frame(maxWidth:.infinity)
+                        Divider()
+                    }
+                    .padding(.bottom,20)
                     
-                    RoundedRectangle(cornerRadius: 5)
-                        .fill(Color.init(hex: "#EBEBEB"))
-                        .overlay(
-                            SecureField("Password", text: $password)
-                                .padding(.leading)                      )
-                        .frame(height: 50)
-
+                    if isRegister {
+                        ZStack(alignment:.bottom){
+                            TextField("请输入昵称", text:$nickname)
+                                .font(.system(size: 20))
+                                .frame(height: 50)
+                                .frame(maxWidth:.infinity)
+                            Divider()
+                        }
+                        .padding(.bottom,20)
+                    }
+                    
+                    ZStack(alignment:.bottom){
+                        SecureField("请输入密码", text: $password)
+                            .font(.system(size: 20))
+                            .frame(height: 50)
+                            .frame(maxWidth:.infinity)
+                        Divider()
+                    }
+                    
+                    HStack{
+                        Text("\(isRegister ? "注册" : "登录")遇到问题,反馈？")
+                            .font(.system(size: 20))
+                            .foregroundColor(.orange)
+                        Spacer()
+                        
+                        Button {
+                            if !isRegister {
+                                login.loginPhone(phone: phone, password: password)
+                            }
+                            isPresented.toggle()
+                        } label: {
+                            Text(isRegister ? "注册" : "登录")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                        }
+                        .frame(width: 100, height: 50)
+                        .background((phone == "" && password == "") ? Color.gray : Color.orange)
+                        .disabled(phone == "" && password == "")
+                        .cornerRadius(25)
+                    }
+                    .padding(.top,50)
+                    
                     
                     Spacer()
                     
-                    HStack(alignment: .center){
-                        Text("Don't have an account")
-                        Text(type)
-                            .font(.system(size: 16,weight: .bold))
-                            .onTapGesture {
-                                withAnimation(.easeInOut(duration: 0.5)) {
-                                    type = type == "Login" ? "Register" : "Login"
-                                }
-                            }
-                    }
-                    .frame(maxWidth: .infinity)
-                    
-                    Button {
-                        print("3232")
-                    } label: {
-                        Text(type == "Login" ? "Sign in" : "Register")
-                    }
-                    .customButtom(bgColor: Color.black)
+                  
 
                 }
                 .frame(width:proxy.size.width , height: proxy.size.height)
+                
             }
         }
-        .padding(.horizontal,15)
-        .padding(.vertical,20)
+        .padding(20)
         .ignoresSafeArea(.all)
-        .onAppear {
-            print("311",type)
-            
-        }
     }
 }
-
-//struct LoginOrRegister_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LoginOrRegister(isPresented: $isPresented, type: "Login")
-//    }
-//}
